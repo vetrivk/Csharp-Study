@@ -1,0 +1,27 @@
+C# Document & Interview Questions
+
+1. What is a C#?
+            C# is a Programming Language developed by Microsoft within its .NET framework. C# is an object-oriented-programming language used to building a  variety of applications include desktop, Web applications, Games, Mobile apps and more.
+
+2. What is a c# DataType?
+ A data type tells the computer what kind of data you'll store in a variable. It helps the computer understand how to handle the data and how much memory to allocate for it.
+
+In C#, there are two main categories of data types:
+
+ I. Value types: These data types store data directly in the stack memory. Modifications to them do not affect the original data. 
+
+ Examples of value types include:
+   - `int`: Represents integer numbers.
+   - `float`: Represents single-precision floating-point numbers.
+   - `double`: Represents double-precision floating-point numbers.
+   - `char`: Represents a single Unicode character.
+   - `bool`: Represents a Boolean value (true or false).
+   - `string`: Represents a sequence of characters.
+
+ II. Reference types: These data types store references to data in the heap memory. Modifications to them can affect the original data. 
+
+ Examples of reference types include:
+   - Classes: Blueprint for creating objects.
+   - Arrays: Collections of elements stored in contiguous memory locations.
+   - Interface: Defines a contract that implementing classes must adhere to.
+   - Delegates: Type-safe function pointers that reference methods.
