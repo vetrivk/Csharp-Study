@@ -3,64 +3,119 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        width: 70%;
-        margin: 0 auto;
-        font-size: 25px;
-      }
-      p {
-        padding: 10px;
-      }
-      .cs {
-        margin: 20px;
-      }
-    </style>
+    <!-- language-javascript-code -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css"
+      integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- my css link -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Dot Net</title>
   </head>
   <body>
-    <div><h1>C# Document & Interview Questions</h1></div>
+    <div class="container mt-2">
+      <div style="text-align: center">
+        <h1>C# Document & Interview Questions</h1>
+      </div>
 
-    <!-- What is a C# Q & A -->
-    <div class="cs">
-      <h3>1.What is a C#?</h3>
-      <p>
-        C# is a Programming Language developed by Microsoft within its .NET
-        framework. C# is an object-oriented-programming language used to
-        building a variety of applications include desktop, Web applications,
-        Games, Mobile apps and more.
-      </p>
+      <!-- What is a C# Q & A -->
+      <div class="cs">
+        <h3>1.What is a C#?</h3>
+        <p class="para">
+          C# is a Programming Language developed by Microsoft within its .NET
+          framework. C# is an object-oriented-programming language used to
+          building a variety of applications include desktop, Web applications,
+          Games, Mobile apps and more.
+        </p>
+      </div>
     </div>
-    <hr />
+    <!-- Questions -->
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <div class="row">
+            <div class="legend col-md-11 col-sm-12 text-center">
+              Below is a simple C# code example of printing a message
+            </div>
+            <div class="col-md-1 col-sm-12 text-center">
+              <button class="btn" onclick="copyCode(event)">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-copy"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <pre class="card-body" id="codeSnippet">
+      <code class="language-javascript"> 
+        Using System;
+        namespace your_project_name // Organizes the code.
+        {
+            class Program //Contains the program's main logic
+            {
+                static void Main(string[] args) //Entry point of the application
+                {
+                  Console.WriteLine("Hello World"); //The cursor moves to the next line
+
+                  Console.Write("I ");
+                  Console.Write("am ");
+                  Console.Write("Student"); //The cursor does not move to the next line
+
+                  Console.ReadKey(); //Waits for a key press to keep the console window open
+                }
+            }
+        }
+      </code>
+      </pre>
+        <div class="card-footer">
+          <h6>OutPut:</h6>
+          <p class="output">Hello World</p>
+          <p class="output">I am Student</p>
+        </div>
+      </div>
+    </div>
 
     <!-- what is a c# datatype -->
-    <div>
-      <h4>2. What is a c# DataType ?</h4>
-      <p>
-        A data type tells the computer what kind of data you'll store in a
-        variable. It helps the computer understand how to handle the data and
-        how much memory to allocate for it.<br /><br />
-        In C#, there are two main categories of data types: <br />I. Value
-        types: These data types store data directly in the stack memory.
-        Modifications to them do not affect the original data. Examples of value
-        types include: - `int`: Represents integer numbers. - `float`:
-        Represents single-precision floating-point numbers. - `double`:
-        Represents double-precision floating-point numbers. - `char`: Represents
-        a single Unicode character. - `bool`: Represents a Boolean value (true
-        or false). - `string`: Represents a sequence of characters. II.
-        Reference types: These data types store references to data in the heap
-        memory. Modifications to them can affect the original data. Examples of
-        reference types include: - Classes: Blueprint for creating objects. -
-        Arrays: Collections of elements stored in contiguous memory locations. -
-        Interface: Defines a contract that implementing classes must adhere to.
-        - Delegates: Type-safe function pointers that reference methods.
-      </p>
-    </div>
-    <hr />
+
+    <!-- language-javascript-code-design-link -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"
+      integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- my js link -->
+    <script src="script.js"></script>
+
+    <!-- boostrap js scr -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

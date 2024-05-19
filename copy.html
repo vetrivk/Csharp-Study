@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css"
+      integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-center">
+        <h1>C# Document & Interview Questions</h1>
+      </div>
+
+      <!-- What is a C# Q & A -->
+      <div class="cs">
+        <h3>1. What is C#?</h3>
+        <p>
+          C# is a programming language developed by Microsoft within its .NET
+          framework. It is an object-oriented programming language used for
+          building a variety of applications including desktop, web
+          applications, games, mobile apps, and more.
+        </p>
+      </div>
+
+      <div class="card">
+        <legend class="text-center card-header">
+          Below is a simple C# code example of printing a message
+          <button class="btn btn-sm btn-primary" onclick="copyCode()">
+            Copy
+          </button>
+        </legend>
+        <pre class="card-body" id="codeSnippet">
+        <code class="language-javascript"> 
+          Using System;
+          namespace your_project_name // Organizes the code.
+          {
+              class Program //Contains the program's main logic
+              {
+                  static void Main(string[] args) //Entry point of the application
+                  {
+                    Console.WriteLine("Hello World"); //The cursor moves to the next line
+
+                    Console.Write("I ");
+                    Console.Write("am ");
+                    Console.Write("Student"); //The cursor does not move to the next line
+
+                    Console.ReadKey(); //Waits for a key press to keep the console window open
+                  }
+              }
+          }
+        </code>
+      </pre>
+        <div class="card-footer">
+          <h6>OutPut:</h6>
+          <p class="output">Hello World</p>
+          <p class="output">I am Student</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and Prism JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-CFXPLFdC3nwwjGQP8deFqKLAUsRziJ8kGfZNbJF8phTCwJfzi6F+kt8nFVyzv5ZB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-pzjw8f+3p0spysJHAHR8x8f/r4txuXj8jNusLsFbBv+6Bjtuq5doAsg5gtKDjK2x"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"
+      integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      function copyCode() {
+        const codeElement = document.getElementById("codeSnippet");
+        const code = codeElement.innerText;
+
+        navigator.clipboard.writeText(code).then(
+          function () {
+            alert("Code copied to clipboard!");
+          },
+          function (err) {
+            console.error("Failed to copy: ", err);
+          }
+        );
+      }
+    </script>
+  </body>
+</html>

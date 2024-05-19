@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css"
+      integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-center">
+        <h1>C# Document & Interview Questions</h1>
+      </div>
+
+      <!-- What is a C# Q & A -->
+      <div class="cs">
+        <h3>1. What is C#?</h3>
+        <p class="para">
+          C# is a programming language developed by Microsoft within its .NET
+          framework. It is an object-oriented programming language used for
+          building a variety of applications including desktop, web
+          applications, games, mobile apps, and more.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <div class="row">
+                  <div class="legend col-11 text-center">
+                    Below is a simple C# code example of printing a message
+                  </div>
+
+                  <div class="col-1 text-center">
+                    <button class="btn" onclick="copyCode(event)">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        class="bi bi-copy"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <pre class="card-body" id="codeSnippet">
+          <code class="language-javascript"> 
+            Using System;
+            namespace your_project_name // Organizes the code.
+            {
+                class Program //Contains the program's main logic
+                {
+                    static void Main(string[] args) //Entry point of the application
+                    {
+                      Console.WriteLine("Hello World"); //The cursor moves to the next line
+
+                      Console.Write("I ");
+                      Console.Write("am ");
+                      Console.Write("Student"); //The cursor does not move to the next line
+
+                      Console.ReadKey(); //Waits for a key press to keep the console window open
+                    }
+                }
+            }
+          </code>
+          </pre>
+              <div class="card-footer">
+                <h6>OutPut:</h6>
+                <p class="output">Hello World</p>
+                <p class="output">I am Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bootstrap JS and Prism JS -->
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-CFXPLFdC3nwwjGQP8deFqKLAUsRziJ8kGfZNbJF8phTCwJfzi6F+kt8nFVyzv5ZB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-pzjw8f+3p0spysJHAHR8x8f/r4txuXj8jNusLsFbBv+6Bjtuq5doAsg5gtKDjK2x"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"
+      integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"
+      integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      function copyCode(event) {
+        let parentElement = event.target.closest(".card");
+        let codeSnippet =
+          parentElement.querySelector(".card-body code").innerText;
+        let btnCopy = event.target;
+
+        navigator.clipboard
+          .writeText(codeSnippet)
+          .then(() => {
+            //alert("Code copied to clipboard!");
+            btnCopy.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+          <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+          <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+        </svg>`;
+          })
+          .catch((err) => {
+            console.error("Failed to copy code: ", err);
+          });
+      }
+    </script>
+  </body>
+</html>
